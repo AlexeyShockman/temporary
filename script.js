@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", main);
-
 const sideSize = 16;
 const animDelayStep = 5;  //ms
 const arrOfClassNames = ['slide-SIDE-', 'perspective-SIDE-', 'rotate-SIDE-', 'tin-SIDE-Out', 'tin-SIDE-Out', 'tin-SIDE-Out', 'tin-SIDE-Out', 'tin-SIDE-Out'];
