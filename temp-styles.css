@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(70deg, blue, #ff0029);
+}
+
+body, .smallCube{
+    background-image: linear-gradient(70deg, blue, #ff0029);
+    /*background-image: url('https://picsum.photos/458/354?gravity=east');*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.smallCube {
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+}
+.container {
+    display: grid;
+    height: 80vw;
+    width: 80vw;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    /*background: center / contain no-repeat;*/
+    background-image: url('https://picsum.photos/800?gravity=east');
+    border-radius: 15px;
+    opacity: 1;
+}
+
+
+
+/*.smallCube#cube-${$}*16*/
