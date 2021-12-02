@@ -1,0 +1,11 @@
+{
+  "homepage": "https://alexeyshockman.github.io/temporary/",
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "magic.css": "^1.4.7"
+  },
+  "script": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
