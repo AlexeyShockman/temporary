@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background: linear-gradient(70deg, blue, #ff0029);
 }
 
 body, .smallCube{
@@ -37,8 +36,7 @@ body, .smallCube{
     /*background: center / contain no-repeat;*/
     background-image: url('https://i.ibb.co/82SRyt8/2021-12-04-16-00-07.png');
     background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
+    /*background-position: center;*/
     border-radius: 15px;
     opacity: 1;
 }
