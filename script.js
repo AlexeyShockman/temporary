@@ -5,7 +5,7 @@ const arrOfClassNames = ['slide-SIDE-', 'perspective-SIDE-', 'rotate-SIDE-', 'ti
 const arrOfCornerClassNames = ['open-SIDE2--SIDE1-', 'open-SIDE2--SIDE1-', 'bomb-SIDE1-Out', 'bomb-SIDE1-Out', 'bomb-SIDE1-Out', 'holeOut', 'holeOut', 'holeOut' ];
 //let step = 0; на основе этого параметра будут вычисляться координаты сторон. Условно говоря, это какой ряд от края мы рассматриваем.
 let topRow, rightRow, botRow, leftRow, reverseLeftRow, reverseBotRow;
-let animDelay = 0;
+let animDelay = 1000;
 
 
 function getRows(step) {
@@ -30,7 +30,7 @@ function doStyle(arrOfRows, $arrOfCubes, className='vanishOut', direction = 'Rig
         animDelay += animDelayStep;
         el.classList.add('magictime', sideClassName);
     })
-    animDelay += 150;
+    animDelay += 250;
 }
 
 function doCornerStyle(cornerEl, $arrOfCubes, className, direction){
@@ -55,6 +55,7 @@ function animateAll() {
         doCornerStyle(rightRow[0], $q, arrOfCornerClassNames[i],['Right', 'Up']);
         doCornerStyle(reverseBotRow[0],$q, arrOfCornerClassNames[i],['Right', 'Down']);
         doCornerStyle(reverseLeftRow[0], $q, arrOfCornerClassNames[i], ['Left', 'Down']);
+        animDelay += 300;
     }
 }
 

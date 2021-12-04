@@ -15,7 +15,6 @@ body {
 
 body, .smallCube{
     background-image: linear-gradient(70deg, blue, #ff0029);
-    /*background-image: url('https://picsum.photos/458/354?gravity=east');*/
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -36,7 +35,10 @@ body, .smallCube{
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr);
     /*background: center / contain no-repeat;*/
-    background-image: url('https://picsum.photos/800?gravity=east');
+    background-image: url('https://i.ibb.co/82SRyt8/2021-12-04-16-00-07.png');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
     border-radius: 15px;
     opacity: 1;
 }
